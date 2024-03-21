@@ -35,7 +35,7 @@ app.use('/abracadabra/juego/:usuario', (req,res,next)=>{
 })
 
 app.get('/abracadabra/juego/:usuario',(req,res)=>{
-    res.send('user found')
+    res.sendFile(path.join(__dirname,'/index.html'))
 })
 
 app.get('/abracadabra/conejo/:n', (req,res)=>{
